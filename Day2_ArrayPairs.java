@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayPairs{
+public class Day2_ArrayPairs{
 
   //function for the Pairs
    public static void Pairs(int arr[]){
