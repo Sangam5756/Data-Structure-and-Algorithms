@@ -4,14 +4,14 @@ public class BuyandSellStocks{
 
     public static int byandSellStock(int arr[]){
 
-        int BP = Integer.MAX_VALUE;
+        int BP = Integer.MAX_VALUE;  // buying price
         int Maxprofit =0;
         
 
         for(int i =0; i< arr.length;i++){
             if(BP < arr[i] ){
-                int profit =arr[i] - BP;
-                Maxprofit =Math.max(Maxprofit, profit);
+                int profit =arr[i] - BP;  //calculate profit
+                Maxprofit =Math.max(Maxprofit, profit);  // maximum profit
             }
             else{
                 BP =arr[i];
@@ -28,3 +28,7 @@ public class BuyandSellStocks{
 
     }
 }
+
+
+// output:
+// 5
