@@ -5,15 +5,15 @@ public class J8_MultilevelInheritance{
         Dog bruno=new Dog();
         bruno.eats();
         bruno.breathe();
-        bruno.sound ="bhoo- bhoo";
+        bruno.sound ="bhoo-bhoo";
         System.out.println(bruno.sound);
 
     }
 }
 
 // Multilevel Inheritance
-        //Base class of derive2    base class of derived3
-//base       -->Derived -->          dervice2     -->       dervied3 ....
+        //Base class of Derived2    base class of Derived3
+//base       -->Derived -->          Derived2     -->       Derived3 ....
 class Animal{
 
     void eats(){
