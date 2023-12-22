@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class J2_FindSubset{
+public class FindSubset{
 
     // 2^n subset
     // n is no of character
