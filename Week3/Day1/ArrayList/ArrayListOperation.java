@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class ArrayList{
+public class ArrayListOperation{
 
 
     public static void main(String args[]){
