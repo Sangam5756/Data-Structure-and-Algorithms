@@ -9,3 +9,9 @@ In the Linkedlist we created the function for the following operation-
 4.Add in the Middle
 <br>
 5.Print the size of the linkedlist
+<br>
+6.Remove First Element from Linkedlist
+<br>
+7.Remove Last Element from Linkedlist
+<br>
+8.Search(iterative) in Linkedlist
