@@ -52,21 +52,32 @@ public class LinkedList{
 
   }
 
+  // Add in the Middle
+  public void AddAtindex(int index, int data){
+    if(index == 0){
+      addFirst(data);
+      return;
+    }
+    Node newnode = new Node(data);
+    Node temp = head;
+    int i =0;
+    while( i < (index-1)){
+      temp =temp.next;
+      i++;
+    }
+    newnode.next = temp.next;
+    temp.next= newnode;
+  }
   public static void main(String args[]){
     LinkedList l1  = new LinkedList();
     // l1.head = new Node(1);
     // l1.head.next = new Node(2);
-    printList();
     l1.addFirst(2);
-    printList();
-
     l1.addFirst(1);
-    printList();
-
-    l1.addLast(3);
-    printList();
-    
+    l1.addLast(3);    
     l1.addLast(4);
+    
+    l1.AddAtindex(1,5);
     printList();
   }
 }
