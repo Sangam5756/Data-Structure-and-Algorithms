@@ -1,7 +1,7 @@
-Linkedlist we created the function for the following operation
+In the Linkedlist we created the function for the following operation-
 <br>
-1.Add at First position
+1. Add at First position
 <br>
-2.Add at last  position
+2. Add at last  position
 <br>
-3.Print the LinkedList
+3. Print the LinkedList
