@@ -5,3 +5,5 @@ In the Linkedlist we created the function for the following operation-
 2.Add at last  position
 <br>
 3.Print the LinkedList
+<br>
+4.Add in the Middle
