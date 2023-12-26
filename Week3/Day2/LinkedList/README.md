@@ -7,3 +7,5 @@ In the Linkedlist we created the function for the following operation-
 3.Print the LinkedList
 <br>
 4.Add in the Middle
+<br>
+5.Print the size of the linkedlist
