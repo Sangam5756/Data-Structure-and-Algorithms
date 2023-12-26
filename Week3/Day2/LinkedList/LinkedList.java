@@ -10,11 +10,13 @@ public class LinkedList{
 
   public static Node head;
   public static Node tail;
+  public static int size;
 
   // Add first Operation
   // Add Element at first position of linked list
   public static void addFirst(int data){
     Node newnode =new Node(data);   // Create the Newnode
+    size++;
     if(head == null){
           head=tail=newnode;
           return;
@@ -27,6 +29,7 @@ public class LinkedList{
   // ADD Last Operation 
   public void addLast(int data){
     Node newnode  = new Node(data);// 1.Create the newNode
+    size++;
     if(head == null){           // case - head and tail are equal to null means linked list is empty
       head=tail= newnode;
       return;
@@ -59,6 +62,7 @@ public class LinkedList{
       return;
     }
     Node newnode = new Node(data);
+    size++;
     Node temp = head;
     int i =0;
     while( i < (index-1)){
@@ -79,5 +83,6 @@ public class LinkedList{
     
     l1.AddAtindex(1,5);
     printList();
+    System.out.println("The size of the linkedlist is "+l1.size);
   }
 }
