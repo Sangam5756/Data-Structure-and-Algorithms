@@ -135,26 +135,75 @@ public static void reverseLinkedlist(){
   }
 
   
+  // 12.Check ll is palindrome or not (Slow Fast Approach to find mid)
+  public Node findmid(Node head){
+    Node slow = head;
+    Node fast = head;
+
+    while(fast != null && slow.next != null){
+      slow =slow.next;
+      fast =fast.next.next;
+    }
+    return slow;
+
+  }
+
+  public boolean checkpalidrome(){
+
+    if(head == null && head.next!=null){
+      return true;
+    }
+    //1 to find the mid
+    Node midNode = findmid(head);
+    // 2. reverse the 2nd half
+    Node prev =null;
+    Node curr =midNode;
+    Node next;
+    while(curr != null){
+      next =curr.next;
+      curr.next =prev;
+      prev =curr;
+      curr =next;
+    }
+    Node right =prev; //right half head
+    Node left =head;
+    // 3.check left half == right half
+    while(right != null ){
+      if(left.data != right.data){
+        return false;
+      }
+      left =left.next;
+      right =right.next;
+    }
+
+  return true;
+
+  }
+
+  
   
 
   public static void main(String args[]){
     LinkedList l1  = new LinkedList();
     // l1.head = new Node(1);
     // l1.head.next = new Node(2);
+    // l1.addFirst(2);
+    // l1.addFirst(1);
+    // l1.addLast(3);    
+    // l1.addLast(4);    
+    // l1.AddAtindex(1,5);    
+    // printList();
+    // reverseLinkedlist();
+    // deleteNthnodeFromend(3);
+    
     l1.addFirst(2);
     l1.addFirst(1);
-    l1.addLast(3);    
-    l1.addLast(4);    
-    l1.AddAtindex(1,5);
-                   
+    l1.addLast(2);
+    l1.addLast(1);                   
+    System.out.println(l1.checkpalidrome());
     
-    
-    
-    printList();
-    reverseLinkedlist();
-    deleteNthnodeFromend(3);
-    printList();
+    // printList();
     // System.out.println("Element found at index :"+l1.searchRecursive(3));
-    System.out.println("Size of the Linkedlist is :"+l1.size);
+    // System.out.println("Size of the Linkedlist is :"+l1.size);
   }
 }
