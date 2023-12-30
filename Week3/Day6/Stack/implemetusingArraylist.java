@@ -4,6 +4,7 @@
 
 import java.util.*;
 public class J1_stack{
+   
    static class Stack{
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -23,7 +24,7 @@ public class J1_stack{
             return top;
         }
 
-        public void peek(){
+        public int peek(){
             int top =list.get(list.size() -1);
             return top;
         }
@@ -35,8 +36,9 @@ public class J1_stack{
 
         s.push(1);
         s.push(2);
-        s.pop();
-        s.peek();
-
+        while(!isEmpty()){
+           System.out.println(s.peek());
+           s.pop();
     }
+}
 }
