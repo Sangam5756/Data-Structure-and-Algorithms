@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class preorder{
+public class Buildpreorder{
 
     static class Node{
 
