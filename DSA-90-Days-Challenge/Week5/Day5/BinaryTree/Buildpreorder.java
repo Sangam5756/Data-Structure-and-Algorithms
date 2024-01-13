@@ -16,7 +16,7 @@ public class Buildpreorder{
         }
     }
 
-    static class BinaryTree{
+   public  static class BinaryTree{
         static int idx =-1;
         public static Node buildTree(int nodes[]){
             idx++;
