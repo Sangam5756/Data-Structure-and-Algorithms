@@ -49,8 +49,8 @@ public class Inorder{
         BinaryTree tree = new BinaryTree();
 
         Node root = tree.buildTree(nodes);
-
         
+        // System.out.println(root.data);
         tree.preorder(root);
 
 
