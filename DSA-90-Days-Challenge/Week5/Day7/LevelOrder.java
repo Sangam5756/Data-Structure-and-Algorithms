@@ -25,18 +25,24 @@ public class LevelOrder{
         while(!q.isEmpty()){
             // Remove the element
             Node curr = q.remove();
-            if(curr == null){
+            if(curr == null)
+            {
                 System.out.println();
-
-                if(q.isEmpty()){
-                    break;
-                }else{
+                // check queue is empty if yes then stop
+                 if(q.isEmpty())
+                 {
+                     break;
+                     
+                  }else
+                 { // if not then add null to the queue
                     q.add(null);
-                }
+                  }
+                
             }else{
 
                 // print data
                 System.out.print(curr.data+" ");
+                
                 // check left is null or not
                 if(curr.left != null){
                     q.add(curr.left);
