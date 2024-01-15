@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class J6_HeightofTree{
+public class HeightofTree{
 
     static class Node{
         int data;
@@ -14,7 +14,7 @@ public class J6_HeightofTree{
         }
 
     }
-    static int  idx =-1;
+    static int  idx =-1;  //to track the index
     public static Node Bulidtree(int nodes[]){
         idx++;
 
@@ -28,11 +28,12 @@ public class J6_HeightofTree{
         
     }
     public static int height(Node root){
+        // check if root is null or not
         if(root == null){
             return 0;
         }
-        int leftheight = height(root.left);
-        int rightheight = height(root.right);
+        int leftheight = height(root.left); // height of left tree through recursion
+        int rightheight = height(root.right);// height of right tree through recursion
 
         return Math.max(leftheight, rightheight) + 1;
     }
