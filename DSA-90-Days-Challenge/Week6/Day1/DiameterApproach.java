@@ -6,7 +6,6 @@ public class J9_DiameterApproach{
         int data;
         Node left;
         Node right;
-
         Node(int data){
             this.data = data;
             this.left = left;
