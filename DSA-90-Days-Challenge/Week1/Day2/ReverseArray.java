@@ -2,18 +2,20 @@ import java.util.*;
 
 public class ReverseArray{
 
-    public static void reverse(int arr[]){
-       int start =0;
-       int last=arr.length-1;
-        while(start < last){
-            int temp = arr[last];
-            arr[last] =arr[start];
-            arr[start]= temp;
+    public static void reverseArray(int arr[]){
+        int first = 0; 
+        int last = arr.length-1;
+    while( first < last){
+        int temp = arr[last];
+        arr[last] = arr[first];
+        arr[first]= temp;
 
-            start++;
-            last--;
-        }
+        first++;
+        last--;
     }
+    }
+        
+    
     public static void print(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
@@ -25,7 +27,7 @@ public class ReverseArray{
 
         int arr[] = {1,2,3,4,5};
         print(arr);
-        reverse(arr);
+        reverseArray(arr);
         print(arr);
         
 
