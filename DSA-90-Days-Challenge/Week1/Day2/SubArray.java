@@ -1,55 +1,89 @@
 import java.util.*;
 
 public class SubArray{ 
-  
-public static void subarr(int arr[]){
-    int ts= 0; // total pair counter initialize to 0
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i; j < arr.length; j++) {
-                int sum = 0; // sum for every subarray 
-               for (int k = i; k <= j; k++) {
-                    System.out.print(arr[k]+" ");  // print subarray
-                    sum+=arr[k]; //add subarray to sum
-                    
+ public static void subArray(int arr[]){
+        int sum =0;
+        for(int i=0; i<arr.length; i++){
+            sum =0;
+
+            for(int j=i;j<arr.length;j++){
+                                sum =0;
+
+                for(int k =i; k<=j;k++){
+                    sum+=arr[k];
+                    System.out.print(arr[k]+" ");
                 }
-                ts++;
-                System.out.println("Sum: " + sum);  //print sum
+                  System.out.print("="+sum);
+                  System.out.println();
             }
             System.out.println();
-        }       
-                System.out.println("Total pair is :"+ts); //print total pair counter
- 
+        }
+
     }
-   
+
+    public static int subArrayMaxSum(int arr[]){
+        int sum =0;
+        int max =Integer.MIN_VALUE;
+        for(int i=0; i<arr.length; i++){
+            sum =0;
+
+            for(int j=i;j<arr.length;j++){
+                                sum =0;
+
+                for(int k =i; k<=j;k++){
+                    sum+=arr[k];
+                }
+                if(sum > max){
+                    max =sum;
+                }
+            }
+            
+        }
+        return max;
+
+    }
+    public static int totalPairs(int arr[]){
+        int total =0;
+        for(int i=0; i<arr.length; i++){
+
+            for(int j=i;j<arr.length;j++){
+                total++;
+            }
+        }
+        return total;
+
+    }
 
        // Driver code
     public static void main(String args[]){
       
         int arr[] ={2,4,6,8,10};      
-        pair(arr);
+         subArray(arr);
+        System.out.print(subArrayMaxSum(arr));
+        System.out.print(totalPairs(arr));
+
 
     }
 }
 
-output:
-2 Sum: 2
-2 4 Sum: 6
-2 4 6 Sum: 12
-2 4 6 8 Sum: 20
-2 4 6 8 10 Sum: 30
+output:1 =1
+1 2 =3
+1 2 3 =6
+1 2 3 4 =10
+1 2 3 4 5 =15
 
-4 Sum: 4
-4 6 Sum: 10
-4 6 8 Sum: 18
-4 6 8 10 Sum: 28
+2 =2
+2 3 =5
+2 3 4 =9
+2 3 4 5 =14
 
-6 Sum: 6
-6 8 Sum: 14
-6 8 10 Sum: 24
+3 =3
+3 4 =7
+3 4 5 =12
 
-8 Sum: 8
-8 10 Sum: 18
+4 =4
+4 5 =9
 
-10 Sum: 10
-
+5 =5
 Total pair is :15
+Max sum is : 15
