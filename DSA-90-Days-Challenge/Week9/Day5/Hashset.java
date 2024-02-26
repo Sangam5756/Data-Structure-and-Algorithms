@@ -18,6 +18,8 @@ public class Hashset{
         System.out.println(set);
         System.out.println(set.contains(2));
         System.out.println(set.contains(1));
+
+        set.clear();
         System.out.println(set.size());
 
 
