@@ -20,6 +20,7 @@ public class Hashset{
         System.out.println(set.contains(1));
 
         set.clear();
+        System.out.print(set.isEmpty());
         System.out.println(set.size());
 
 
