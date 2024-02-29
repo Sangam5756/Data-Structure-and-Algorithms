@@ -1,8 +1,4 @@
-// Sorted in ascending order
-// Tree map
-// self balance tree
-// Null values is not allowed in tree set
-// operation are in O(logn) compared to hashset
+
 import java.util.*;
 public class TreeSet{
 
@@ -26,6 +22,11 @@ public class TreeSet{
         set1.add("Germany");
         set1.add("America");
         System.out.println(set1);
+// Sorted in ascending order
+// Tree map
+// self balance tree
+// Null values is not allowed in tree set
+// operation are in O(logn) compared to hashset
         
         TreeSet<String> ts = new TreeSet<>();
         // Alphabetical sorting
