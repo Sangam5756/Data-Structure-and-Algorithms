@@ -15,7 +15,7 @@ class Solution {
                 
                 while (currSum != sum) {
                     map.remove(currSum);
-                    temp = temp.next;
+                   temp = temp.next;
                     currSum += temp.val;
                 }
                 map.get(sum).next = temp.next;
