@@ -1,4 +1,4 @@
-// Given a non-empty array of integers arr, every element appears twice except for one. Find that single one.
+// Given a non-empty array of integers arr, every element appears twice except for one. Find that single one..
 // leetcode -https://leetcode.com/problems/single-number/description/
 
 // BruetForce Solution
