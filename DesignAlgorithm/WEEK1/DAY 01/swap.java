@@ -1,3 +1,5 @@
+
+import java.util.*;
 class Demo {
 
     static void Swap1(int a,int b){
@@ -43,8 +45,15 @@ class Demo {
 public class swap{
         
     public static void main(String args[]){
-        int a= 10;
-        int b=15;
+        int a;
+        int b;
+        
+        Scanner obj =  new Scanner(System.in);
+        System.out.println("Enter First Value a");
+         a = obj.nextInt();
+        System.out.println("Enter Second Value b");
+         b = obj.nextInt();
+
         System.out.println();
         System.out.println("SWAP USING TEMP VARIABLE");
         System.out.println("Before Swapping a = "+a+" and b = "+b);
